@@ -5,7 +5,7 @@ import HomePage from "pages/HomePage";
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter >
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
       </Routes>
