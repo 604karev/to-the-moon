@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/to-the-moon/build/static/css/main.4f8afe50.css",
+    "main.js": "/to-the-moon/build/static/js/main.a24bd1e5.js",
+    "static/media/hero-bg.jpg": "/to-the-moon/build/static/media/hero-bg.50c6137d00db9f5414b2.jpg",
+    "static/media/earth.svg": "/to-the-moon/build/static/media/earth.83d68f94de9d84f4e1bc.svg",
+    "static/media/rocket.svg": "/to-the-moon/build/static/media/rocket.a4389852c90b9d43571cac86eea0e8ab.svg",
+    "static/media/fantastic-dreams.jpg": "/to-the-moon/build/static/media/fantastic-dreams.fe1ec1602cdf165b5b94.jpg",
+    "static/media/dream-of-stars.jpg": "/to-the-moon/build/static/media/dream-of-stars.0bd31d868cd031988fd3.jpg",
+    "static/media/space-journey.jpg": "/to-the-moon/build/static/media/space-journey.c963fa018a173298be89.jpg",
+    "static/media/move-borders.jpg": "/to-the-moon/build/static/media/move-borders.c0cc7a6798031cf48267.jpg",
+    "static/media/logo.svg": "/to-the-moon/build/static/media/logo.f4153131d3955bdfa609912a9f3b5caf.svg",
+    "index.html": "/to-the-moon/build/index.html",
+    "main.4f8afe50.css.map": "/to-the-moon/build/static/css/main.4f8afe50.css.map",
+    "main.a24bd1e5.js.map": "/to-the-moon/build/static/js/main.a24bd1e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f8afe50.css",
+    "static/js/main.a24bd1e5.js"
+  ]
+}
