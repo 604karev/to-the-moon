@@ -1,7 +1,7 @@
 {
   "name": "cra-sass",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://604karev.github.io/to-the-moon/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
