@@ -101,7 +101,7 @@ const Header = () => {
                 <li className="sidebar__nav-item sidebar__cart">
                   <Link href="/products" className="sidebar__nav-link">
                   <svg
-                  className="icon-gradient"
+                  className="icon-gradient-sidebar"
                     width="24"
                     height="20"
                     viewBox="0 0 24 20"

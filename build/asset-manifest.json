@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/to-the-moon/build/static/css/main.4f8afe50.css",
-    "main.js": "/to-the-moon/build/static/js/main.2026ada8.js",
+    "main.css": "/to-the-moon/build/static/css/main.dbf96db2.css",
+    "main.js": "/to-the-moon/build/static/js/main.63736aa9.js",
     "static/media/hero-bg.jpg": "/to-the-moon/build/static/media/hero-bg.50c6137d00db9f5414b2.jpg",
     "static/media/earth.svg": "/to-the-moon/build/static/media/earth.83d68f94de9d84f4e1bc.svg",
     "static/media/rocket.svg": "/to-the-moon/build/static/media/rocket.a4389852c90b9d43571cac86eea0e8ab.svg",
@@ -11,11 +11,11 @@
     "static/media/move-borders.jpg": "/to-the-moon/build/static/media/move-borders.c0cc7a6798031cf48267.jpg",
     "static/media/logo.svg": "/to-the-moon/build/static/media/logo.f4153131d3955bdfa609912a9f3b5caf.svg",
     "index.html": "/to-the-moon/build/index.html",
-    "main.4f8afe50.css.map": "/to-the-moon/build/static/css/main.4f8afe50.css.map",
-    "main.2026ada8.js.map": "/to-the-moon/build/static/js/main.2026ada8.js.map"
+    "main.dbf96db2.css.map": "/to-the-moon/build/static/css/main.dbf96db2.css.map",
+    "main.63736aa9.js.map": "/to-the-moon/build/static/js/main.63736aa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8afe50.css",
-    "static/js/main.2026ada8.js"
+    "static/css/main.dbf96db2.css",
+    "static/js/main.63736aa9.js"
   ]
 }
