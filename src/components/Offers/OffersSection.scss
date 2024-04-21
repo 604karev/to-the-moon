@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+.offers-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: var(--color-accent);
+  padding-top: 2rem;
+}
+
+.offers {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-wrap {
+  overflow: hidden;
+  color: #fff;
+  opacity: 60%;
+}
+.read-more-container {
+  padding-top: 1rem;
+}
+
+.read-more-target {
+  display: block;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.5s ease-in-out;
+  height: 0; 
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  transform: scaleY(1);
+  height: auto; 
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: var(--color-secondary);
+  transition: background-color 0.3s;
+  display: inline-block;
+  &:hover{
+    filter: brightness(60%);
+  }
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.heading {
+  color: #fff;
+}

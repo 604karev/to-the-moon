@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+
+.hero {
+  background-image: url("../../assets/images/earth.svg"),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) -0.52%,
+      rgba(15, 20, 32, 0.79) 99.48%
+    ),
+    url("../../assets/images/hero-bg.jpg");
+  background-position: calc(50% + 15px) calc(50% + -175px), center center,
+    center center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, cover, cover;
+  color: white;
+  @media (min-width: $breakpoint-md) {
+    background-position: calc(50% + 360px) 20px, center center, center center;
+  }
+
+  &__content {
+    padding: 18rem 0 3.4rem;
+    font-weight: 900;
+    text-align: center;
+    @media (min-width: $breakpoint-md) {
+      text-align: left;
+      padding: 4rem 0;
+      max-width: 490px;
+    }
+    @media (min-width: $breakpoint-lg) {
+      max-width: 693px;
+    }
+  }
+  &__space {
+    color: var(--color-primary);
+  }
+  &__endless {
+    color: var(--color-secondary);
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    @media (min-width: $breakpoint-md) {
+      font-size: 48px;
+    }
+    @media (min-width: $breakpoint-lg) {
+      font-size: 72px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    @media (min-width: $breakpoint-md) {
+      font-size: 22px;
+    }
+    @media (min-width: $breakpoint-lg) {
+      font-size: 32px;
+    }
+  }
+
+  &__cta {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: #000;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    &:hover{
+      filter: brightness(60%);
+    }
+  }
+}

@@ -1,0 +1,168 @@
+@import "../../styles/variables";
+.header {
+  background-color: #000;
+
+  &__logo {
+    img {
+      height: 1.8rem;
+      @media (min-width: $breakpoint-sm) {
+        height: auto;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    // @media (min-width: $breakpoint-sm) {
+    //   padding: 1.2rem 2rem;
+    // }
+  }
+
+  &__nav {
+    display: flex;
+    &-list {
+      display: none;
+      list-style: none;
+
+      gap: 3rem;
+    }
+    @media (min-width: $breakpoint-md) {
+      &-list {
+        display: flex;
+      }
+    }
+
+    &-link {
+      color: white;
+      text-decoration: none;
+      font-size: .9rem;
+      transition: color 0.3s ease;
+      font-weight: 900;
+      @media (min-width: $breakpoint-md) {
+        font-size: 18px;
+      }
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+}
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
+  &:before,
+  &:after,
+  input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+      rotate var(--animation-timing), translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+  input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+}
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--foreground);
+  color: var(--background);
+  
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 250px;
+  z-index: 3;
+  &__nav {
+    text-align: center;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0;
+    }
+
+    &-link {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    display: none !important;
+  }
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+
+.gradient-text {
+  background-color: #fff; /* Replace with your gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block; /* or 'block', depending on your layout */
+  -webkit-text-fill-color: transparent;
+  transition: background-image 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.gradient-text:hover {
+  background-image: linear-gradient(
+    270deg,
+    #ff70d9,
+    #ebff00
+  ); /* Replace with the hover gradient colors */
+}
+.icon-gradient:hover path {
+  fill: url(#iconGradientHover);
+  fill: url(#iconGradientHover-sidebar);
+}
